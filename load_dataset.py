@@ -19,4 +19,7 @@ def d():
     """
     X=dataset.iloc[:,1].values
     print(X)
+    print(dataset.head(3))#print only initial three rows 
+    X=dataset.iloc[1:,:].values #will not contain first row where head[0]
+    print(X)
 d();    
